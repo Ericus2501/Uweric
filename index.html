@@ -30,6 +30,7 @@
         img {
             border-radius: 10px;
             margin: 20px 0;
+            width: 100%;
         }
         .container {
             max-width: 1200px;
@@ -96,12 +97,164 @@
         <h1>Welcome to PersuaPoint Global</h1>
         <p>Your trusted partner in professional presentation coaching and training.<br>Mastering the Art of Global Communication</p>
     </header>
+
     <div class="container">
         <section>
-            <h2>About us </h2>
+            <img src="image.jpg" alt="PersuaPoint Global" width="1250">
+            <h2>About Us</h2>
+            <p>At PersuaPoint Global, we believe that impactful communication is the key to success. Our mission is to empower individuals, businesses, and students with the skills to create persuasive and engaging presentations that resonate with global audiences. Whether you're delivering a corporate pitch, an academic presentation, or a public speech, we provide expert coaching and design services to ensure your message is clear, compelling, and effective. <br/> We also offer top-tier translation services in Kinyarwanda, English, and French, ensuring your content resonates across languages and cultures. Let us help you deliver your message with precision and impact!</p>
+        </section> <H1> <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Mission, Vision & Core Values</title>
+                <style>
+                    /* General Styles */
+                    body {
+                        font-family: 'Arial', sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f0f2f5;
+                        box-sizing: border-box;
+                    }
             
-            <p> At PersuaPoint Global, we believe that impactful communication is the key to success. Our mission is to empower individuals, businesses, and students with the skills to create persuasive and engaging presentations that resonate with global audiences. Whether you're delivering a corporate pitch, an academic presentation, or a public speech, we provide expert coaching and design services to ensure your message is clear, compelling, and effective. <br/> We also offer top-tier translation services in Kinyarwanda, English, and French, ensuring your content resonates across languages and cultures. Let us help you deliver your message with precision and impact!</p> <img src="image.jpg" alt="PersuaPoint Global" width="1250">
-        </section>
+                    /* Content Container */
+                    .content-container {
+                        display: flex;
+                        justify-content: space-around;
+                        max-width: 900px;
+                        margin: 30px auto;
+                        padding: 20px;
+                        background-color: white;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    }
+            
+                    /* Flex Items */
+                    .content-section {
+                        flex: 1;
+                        margin: 0 10px;
+                        text-align: center;
+                    }
+            
+                    /* Header */
+                    h2 {
+                        font-size: 18px;
+                        color: #2b73a0;
+                        margin: 10px 0;
+                        cursor: pointer;
+                        transition: color 0.3s;
+                    }
+            
+                    h2:hover {
+                        color: #3871b3;
+                    }
+            
+                    /* Accordion Content */
+                    .section-content {
+                        display: none;
+                        padding: 10px 15px;
+                        font-size: 12px;
+                        line-height: 1.4;
+                        color: #333;
+                        background-color: #f9f9f9;
+                        border-radius: 5px;
+                        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+                        margin-top: 10px;
+                    }
+            
+                    /* Show Content when Active */
+                    .active + .section-content {
+                        display: block;
+                    }
+            
+                    /* Input Fields */
+                    input, textarea {
+                        width: 90%;
+                        padding: 10px;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+            
+                    textarea {
+                        height: 80px;
+                    }
+            
+                </style>
+            </head>
+            <body>
+            
+                <!-- Main Content -->
+                <div class="content-container">
+            
+                    <!-- Background Section -->
+                    <div class="content-section">
+                        <h2 class="section-header" onclick="toggleContent('background')">Background</h2>
+                        <div id="background" class="section-content">
+                            <textarea placeholder="Enter background information here..."></textarea>
+                        </div>
+                    </div>
+            
+                    <!-- Mission Section -->
+                    <div class="content-section">
+                        <h2 class="section-header" onclick="toggleContent('mission')">Mission</h2>
+                        <div id="mission" class="section-content">
+                            <textarea placeholder="Enter mission information here..."></textarea>
+                        </div>
+                    </div>
+            
+                    <!-- Vision Section -->
+                    <div class="content-section">
+                        <h2 class="section-header" onclick="toggleContent('vision')">Vision</h2>
+                        <div id="vision" class="section-content">
+                            <textarea placeholder="Enter vision information here..."></textarea>
+                        </div>
+                    </div>
+            
+                    <!-- Core Values Section -->
+                    <div class="content-section">
+                        <h2 class="section-header" onclick="toggleContent('values')">Core Values</h2>
+                        <div id="values" class="section-content">
+                            <textarea placeholder="Enter core values here..."></textarea>
+                        </div>
+                    </div>
+            
+                    <!-- Our Team Section -->
+                    <div class="content-section">
+                        <h2 class="section-header" onclick="toggleContent('team')">Our Team</h2>
+                        <div id="team" class="section-content">
+                            <textarea placeholder="Enter team information here..."></textarea>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <script>
+                    // Toggle function to show/hide content
+                    function toggleContent(section) {
+                        const sectionContent = document.getElementById(section);
+                        const sectionHeader = document.querySelector(`#${section} .section-header`);
+                        
+                        // Toggle active class for the header
+                        sectionHeader.classList.toggle('active');
+            
+                        // Check if content is already visible
+                        if (sectionContent.style.display === "block") {
+                            sectionContent.style.display = "none"; // Hide content
+                        } else {
+                            sectionContent.style.display = "block"; // Show content
+                        }
+                    }
+                </script>
+            
+            </body>
+            </html>
+            </H1>
+
+        <!-- Our Services Section -->
         <section>
             <h1>Our Services</h1>
             <div class="services-list">
@@ -121,36 +274,23 @@
                     <a href="#" class="read-more">Read More</a>
                 </div>
                 <div class="service">
-                    <h3>
-            Consulting for International Pitches</h3>
+                    <h3>Consulting for International Pitches</h3>
                     <p>Strategic guidance for entrepreneurs and businesses preparing investor and client pitches across regions.</p>
                     <a href="#" class="read-more">Read More</a>
-                    <h3>
-                        Student-Focused Coaching</h3>
-                                <p>Specialized training for academic presentations, thesis defenses, and public speaking competitions.</p>
-                                <a href="#" class="read-more">Read More</a>
-                                <!DOCTYPE html>
-                                <html lang="en">
-                                <head>
-                                    <meta charset="UTF-8">
-                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                    <title>Translation Services</title>
-                                    <style>
-                                        .heading-color {
-                                            color: #3498db; /* Change this color code as needed */
-                                        }
-                                    </style>
-                                </head>
-                                <body>
-                                    <h3 class="heading-color">Translation Services</h3>
-                
-                                    <p>High-quality professional translation of presentations, documents, and business materials in English, French, and Kinyarwanda, ensuring linguistic precision and cultural relevance.</p>
-                                    <a href="#" class="read-more">Read More</a>
-                                </body>
-                                </html>                                
+                </div>
+                <div class="service">
+                    <h3>Student-Focused Coaching</h3>
+                    <p>Specialized training for academic presentations, thesis defenses, and public speaking competitions.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="service">
+                    <h3>Translation Services</h3>
+                    <p>High-quality professional translation of presentations, documents, and business materials in English, French, and Kinyarwanda, ensuring linguistic precision and cultural relevance.</p>
+                    <a href="#" class="read-more">Read More</a>
                 </div>
             </div>
         </section>
+
         <section class="contact-info">
             <h2>Contact Information</h2>
             <p>Email: <a href="mailto:uweric06@gmail.com">uweric06@gmail.com</a></p>
@@ -165,7 +305,6 @@
             <a href="https://www.facebook.com/profile.php?id=61573833308731" target="_blank">
                 <img src="facebook-icon.png" alt="Facebook" class="social-icon">
             </a>
-            
         </div>
         <p>&copy; 2025 PersuaPoint Global. All rights reserved.</p>
     </footer>

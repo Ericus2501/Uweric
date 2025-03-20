@@ -5,44 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric UWIRINGIYIMANA - Professional Presentation Services</title>
     <style>
-        ul {
-            list-style: none; /* Remove bullet points */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
             padding: 0;
-            display: flex; /* Make items align in a row */
-            gap: 20px; /* Add space between items */
         }
-        li {
-            background: #007bff; /* Blue background */
-            color: white; /* White text */
-            padding: 10px 15px;
-            border-radius: 5px; /* Rounded corners */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #007bff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        img {
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .services-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .service {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 45%;
+            margin: 10px;
+            text-align: center;
+        }
+        .service h3 {
+            color: #007bff;
+        }
+        .service p {
+            margin-top: 10px;
+        }
+        .read-more {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .contact-info p {
+            font-size: 1.1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .social-media-footer a {
+            margin: 0 10px;
+        }
+        .social-media-footer img {
+            width: 30px;
+            height: 30px;
+        }
+        .social-icon {
+            transition: transform 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Eric UWIRINGIYIMANA's Website</h1> 
-    <p>Your trusted partner in professional presentation coaching and training.</p>
-    <img src="image.jpg" alt="Description of Image" width="300">
 
-    <h2>About me</h2>
-    <p>Eric UWIRINGIYIMANA specializes in helping individuals and businesses create compelling, impactful presentations. Our services include coaching, slide design, and training in multiple languages.</p>
+    <header>
+        <h1>Welcome to Eric UWIRINGIYIMANA's Website</h1>
+        <p>Your trusted partner in professional presentation ; coaching and training .</p>
+    </header>
 
-    <h2> His Services </h2> 
-    <ul>
-        <li>Presentation Coaching</li>
-        <li>Slide Design Services</li>
-        <li>Public Speaking Training</li>
-        <li>Multilingual Presentation Assistance (Kinyarwanda, English and French)</li>
-    </ul>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Eric UWIRINGIYIMANA specializes in helping individuals and businesses create compelling, impactful presentations. His services include coaching, slide design, and training in multiple languages (Kinyarwanda, English, and French).</p>
+            <img src="image.jpg" alt="Eric UWIRINGIYIMANA" width="200">
+        </section>
 
-    <h2>Contact Address </h2>
-<p>Email: contact@ uweric09@gmail.com</p>
-<p>Phone: +250788489394</p>
-<p>Location: Kigali, Rwanda</p>
-<p><a href="https://www..com">Visit my homepage for more information</a></p>
+        <section>
+            <h2>My Services</h2>
+            <div class="services-list">
+                <div class="service">
+                    <h3>Presentation Coaching</h3>
+                    <p>Improve your presentation skills and learn to engage your audience effectively.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="service">
+                    <h3>Slide Design Services</h3>
+                    <p>Get visually stunning and impactful slide designs for your presentations.</p>
+                    <a href="#" class="read-more">Read More</a>
+            
+                </div>
+                <div class="service">
+                    <h3>Public Speaking Training</h3>
+                    <p>Master the art of public speaking and become a confident speaker.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="service">
+                    <h3>Multilingual Presentation Assistance</h3>
+                    <p>Get assistance in Kinyarwanda, English, and French for your presentations.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:uweric09@gmail.com">uweric09@gmail.com</a></p>
+            <p>Phone: <a href="tel:+250788489394">+250788489394</a></p>
+            <p>Location: Kigali, Rwanda</p>
+            <p><a href="https://uweric.vercel.app/" class="read-more">Visit my homepage for more information</a></p>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Eric UWIRINGIYIMANA. All rights reserved.</p> 
+        <div class="social-media-footer">
+            <a href="https://www.facebook.com/uwiringiyimana.eric.9/" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://x.com/uweric_09" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/uweric_09/" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/eric-uwiringiyimana-1508a3268/" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com/@uweric_09?_t=ZM-8upS8m4vy2X&_r=1" target="_blank">
+                <i class="fa fa-tiktok"></i> TikTok
+              </a>
+        
+            <a href="https://www.youtube.com/@Uweric_09" target="_blank">
+                <img src="youtube-icon.png" alt="YouTube" class="social-icon">
+            </a>
+        </div>
+        <p>&copy; 2025 Eric UWIRINGIYIMANA. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
